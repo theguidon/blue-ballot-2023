@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* FANCY UNDERLINE HOVER EFFECT CSS BELOW */
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+.link-underline-active {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+}
+
+.link-underline-candidates {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(156 163 175), rgb(156 163 175));
+  background-size: 0px 3px;
+  background-position: 17px 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s ease-in-out;
+}
+
+.link-underline-candidates:hover {
+  background-size: 100% 3px;
+  background-position: 17px 100%;
+}

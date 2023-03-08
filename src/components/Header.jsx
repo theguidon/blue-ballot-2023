@@ -4,14 +4,16 @@ import NavMenu from "./NavMenu";
 import purewhite4x1 from "../assets/images/logos/4x1_purewhite.svg";
 
 const Header = () => {
-
-    const [menu, setMenu] = useState(false);
-
-
+  const [menu, setMenu] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r from-bb_blue via-bb_orange to-bb_yellow flex py-4 fixed top-0 z-50 w-full px-12  tablet:px-4">
-      <div className="cursor-pointer my-auto" onClick={() => {setMenu(true)}}>
+    <header className="bg-gradient-to-r from-bb_blue via-bb_orange to-bb_yellow flex py-4 top-0 z-50 w-full px-12  tablet:px-4">
+      <div
+        className="cursor-pointer my-auto"
+        onClick={() => {
+          setMenu(true);
+        }}
+      >
         <svg
           viewBox="0 0 100 80"
           width="32"
