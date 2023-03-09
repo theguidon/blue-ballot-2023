@@ -42,3 +42,11 @@
   background-size: 100% 3px;
   background-position: 17px 100%;
 }
+
+.franklin-gothic-book{
+  font-family: 'Franklin Gothic Book', sans-serif;
+}
+
+.franklin-gothic-demi{
+  font-family: 'Franklin Gothic Demi', sans-serif;
+}
