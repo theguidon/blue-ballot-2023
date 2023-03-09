@@ -15,12 +15,12 @@ const NavMenu = ({ menu, setMenu }) => {
   return (
     <>
       <nav
-        className={`top-0 left-0 bg-bg-bb_blue absolute flex transition duration-500 z-10 transform select-none franklin-gothic-demi ${
+        className={`top-0 left-0 absolute flex transition duration-500 z-10 transform select-none franklin-gothic-demi ${
           menu ? "translate-x-0" : "-translate-x-full"
         }`}
         style={{ fontWeight: 600 }}
       >
-        <div className="w-60 h-screen bg-bb_blue tablet:w-44">
+        <div className="h-screen bg-bb_blue w-auto">
           <div className="flex items-end my-auto h-16 px-8">
             <svg
               viewBox="0 0 64 64"
@@ -51,11 +51,13 @@ const NavMenu = ({ menu, setMenu }) => {
             </svg>
           </div>
           <div className="ml-6 mb-20 mt-[30px] tablet:mb-12">
-            <img
-              className="w-[200px] tablet:w-[120px]"
-              src={white4x1}
-              alt="Blue Ballot"
-            />
+            <Link to="/">
+              <img
+                className="w-[200px] tablet:w-[120px]"
+                src={white4x1}
+                alt="Blue Ballot"
+              />
+            </Link>
           </div>
           <ul
             className="ml-6 text-white uppercase text-2xl tablet:text-base"
