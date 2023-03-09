@@ -1,20 +1,26 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import white4x1 from "../assets/images/logos/4x1_white.svg";
 import "../fonts.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavMenu = ({ menu, setMenu }) => {
   const [candidates, setCandidates] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenu(false);
+  }, [location]);
 
   return (
     <>
       <nav
-        className={`top-0 left-0 absolute flex transition duration-500 transform select-none ${
+        className={`top-0 left-0 absolute flex transition duration-500 z-10 transform select-none franklin-gothic-demi ${
           menu ? "translate-x-0" : "-translate-x-full"
         }`}
+        style={{ fontWeight: 600 }}
       >
-        <div className="w-60 h-screen bg-bb_blue tablet:w-44">
+        <div className="h-screen bg-bb_blue w-auto">
           <div className="flex items-end my-auto h-16 px-8">
             <svg
               viewBox="0 0 64 64"
@@ -44,16 +50,17 @@ const NavMenu = ({ menu, setMenu }) => {
               ></line>
             </svg>
           </div>
-          <div className="ml-6 mb-12 mt-6 tablet:w-40">
-            <img
-              className="w-60 tablet:w-32"
-              src={white4x1}
-              alt="Blue Ballot"
-            />
+          <div className="ml-6 mb-20 mt-[30px] tablet:mb-12">
+            <Link to="/">
+              <img
+                className="w-[200px] tablet:w-[120px]"
+                src={white4x1}
+                alt="Blue Ballot"
+              />
+            </Link>
           </div>
           <ul
             className="ml-6 text-white uppercase text-2xl tablet:text-base"
-            style={({ fontFamily: "Chivo" }, { fontWeight: 600 })}
           >
             <Link to="/">
               <li className="my-3 w-fit cursor-pointer link-underline">Home</li>
@@ -117,7 +124,7 @@ const NavMenu = ({ menu, setMenu }) => {
             </Link>
           </ul>
         </div>
-        <div className="w-0 h-full border-b-transparent border-l-bb_blue border-b-[100vh] border-l-[60px]"></div>
+        <div className="w-0 h-full relative border-b-transparent border-l-bb_blue border-b-[100vh] border-l-[60px]"></div>
       </nav>
     </>
   );
