@@ -18,7 +18,7 @@ function App() {
           <Route path="/editorial" element={<Editorial />} />
           <Route path="/candidates" element={<Candidates />} />
           <Route path="/archives" element={<Archives />} />
-          <Route path="/a-year-in-revew" element={<YearInReview />} />
+          <Route path="/a-year-in-review" element={<YearInReview />} />
 
           <Route path="*" element={<NoMatch />} />
         </Route>
