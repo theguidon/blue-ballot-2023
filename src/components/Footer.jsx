@@ -1,6 +1,7 @@
 import React from 'react';
 import white4x1 from "../assets/images/logos/4x1_white.svg";
 import { Link, useLocation } from "react-router-dom";
+import "../fonts.css";
 
 
 const Footer = () => {
@@ -17,7 +18,7 @@ const Footer = () => {
                             alt="Blue Ballot"
                         />
                     </Link>
-                        <p className='pt-8 franklin-gothic-book text-bb_white '> Blue Ballot 2023 is The GUIDON’s special coverage of the Sanggunian General Elections. Designed and developed by Digital Development 2022-2023.</p>
+                        <p className='pt-8 chivo-regular text-bb_white '> Blue Ballot 2023 is The GUIDON’s special coverage of the Sanggunian General Elections. Designed and developed by Digital Development 2022-2023.</p>
                         
                 </div>
                 <div className=''>
