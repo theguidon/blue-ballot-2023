@@ -9,6 +9,10 @@ import Header from "./components/Header";
 import Editorial from "./pages/Editorial";
 import YearInReview from "./pages/YearInReview";
 import Footer from "./components/Footer";
+import Presidents from "./pages/Presidents";
+import VicePresidents from "./pages/VicePresidents";
+import SchoolReps from "./pages/SchoolReps";
+import President from "./pages/President";
 
 function App() {
   return (
@@ -18,6 +22,18 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/editorial" element={<Editorial />} />
           <Route path="/candidates" element={<Candidates />} />
+          <Route path="/candidates/president" element={<Presidents />} />
+          <Route path="/candidates/president/:name" element={<President />} />
+
+          <Route
+            path="/candidates/vice-president"
+            element={<VicePresidents />}
+          />
+          <Route
+            path="/candidates/school-representatives"
+            element={<SchoolReps />}
+          />
+
           <Route path="/archives" element={<Archives />} />
           <Route path="/a-year-in-review" element={<YearInReview />} />
 
