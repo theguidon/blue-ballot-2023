@@ -33,6 +33,11 @@ module.exports = {
       laptop: { max: "1024px" },
       desktop: { max: "1280px" },
     },
+    fontFamily: {
+      franklinGothicBook: ["Franklin Gothic Book", "sans-serif"],
+      franklinGothicDemi: ["Franklin Gothic Demi", "sans-serif"],
+      freightText: ["Freight Text", "sans-serif"],
+    },
     plugins: [],
   },
 };
