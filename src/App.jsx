@@ -8,6 +8,7 @@ import Archives from "./pages/Archives";
 import Header from "./components/Header";
 import Editorial from "./pages/Editorial";
 import YearInReview from "./pages/YearInReview";
+import Footer from "./components/Footer";
 
 function App() {
   return (

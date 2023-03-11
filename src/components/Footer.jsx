@@ -1,4 +1,3 @@
-import React from "react";
 import white4x1 from "../assets/images/logos/4x1_white.svg";
 import { Link, useLocation } from "react-router-dom";
 import "../fonts.css";
