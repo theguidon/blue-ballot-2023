@@ -8,6 +8,7 @@ import Archives from "./pages/Archives";
 import Header from "./components/Header";
 import Editorial from "./pages/Editorial";
 import YearInReview from "./pages/YearInReview";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function Layout() {
           so you can think about this <Outlet> as a placeholder for
           the child routes we defined above. */}
       <Outlet />
+      <Footer />
     </>
   );
 }
