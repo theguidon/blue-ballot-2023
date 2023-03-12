@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Candidates from "./pages/Candidates";
 import Archives from "./pages/Archives";
-import Header from "./components/ArchivesHeader";
+import Header from "./components/Header";
 import Editorial from "./pages/Editorial";
 import YearInReview from "./pages/YearInReview";
 import Footer from "./components/Footer";
