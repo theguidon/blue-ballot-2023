@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .square {
+    aspect-ratio: 1/1;
+  }
+}
 /* FANCY UNDERLINE HOVER EFFECT CSS BELOW */
 
 .link-underline {
@@ -37,7 +42,6 @@
   font-family: "Franklin Gothic Demi", sans-serif;
 }
 
-.chivo-regular{
-  font-family: 'Chivo Regular', sans-serif;
+.chivo-regular {
+  font-family: "Chivo Regular", sans-serif;
 }
-

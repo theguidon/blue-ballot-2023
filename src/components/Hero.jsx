@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import white4x1 from "../assets/images/logos/4x1_white.svg";
+import white4x1 from "../assets/images/svgs/logo4x1white.svg";
 
 export default function Hero() {
   return (

@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Candidates from "./pages/Candidates";
 import Archives from "./pages/Archives";
-import Header from "./components/Header";
+import Header from "./components/ArchivesHeader";
 import Editorial from "./pages/Editorial";
 import YearInReview from "./pages/YearInReview";
 import Footer from "./components/Footer";
@@ -34,11 +34,11 @@ function App() {
             element={<SchoolReps />}
           />
 
-          <Route path="/archives" element={<Archives />} />
           <Route path="/a-year-in-review" element={<YearInReview />} />
 
           <Route path="*" element={<NoMatch />} />
         </Route>
+        <Route path="/archives" element={<Archives />} />
       </Routes>
     </>
   );
