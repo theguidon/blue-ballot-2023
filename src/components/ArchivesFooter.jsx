@@ -21,25 +21,6 @@ const Footer = () => {
             2022-2023.
           </p>
         </div>
-        <div className="">
-          <div className="  bg-bb_blue pt-12 pr-10  text-right text-bb_white uppercase franklin-gothic-demi tablet:text-left tablet:grid  tablet:pr-0 tablet:grid-cols-2">
-            <Link to="/">
-              <h3> Home </h3>
-            </Link>
-            <Link to="/editorial">
-              <h3> Editorial </h3>
-            </Link>
-            <Link to="/candidates">
-              <h3> Candidates </h3>
-            </Link>
-            <Link to="/a-year-in-review">
-              <h3> A Year in Review </h3>
-            </Link>
-            <Link to="/archives">
-              <h3> Archives </h3>
-            </Link>
-          </div>
-        </div>
       </div>
       <div className="bg-bb_blue">
         <div className="w-[70vw]">

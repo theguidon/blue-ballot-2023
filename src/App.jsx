@@ -9,6 +9,10 @@ import Header from "./components/Header";
 import Editorial from "./pages/Editorial";
 import YearInReview from "./pages/YearInReview";
 import Footer from "./components/Footer";
+import Presidents from "./pages/Presidents";
+import VicePresidents from "./pages/VicePresidents";
+import SchoolReps from "./pages/SchoolReps";
+import President from "./pages/President";
 
 function App() {
   return (
@@ -18,29 +22,40 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/editorial" element={<Editorial />} />
           <Route path="/candidates" element={<Candidates />} />
-          <Route path="/archives" element={<Archives />} />
-          <Route path="/a-year-in-revew" element={<YearInReview />} />
+          <Route path="/candidates/president" element={<Presidents />} />
+          <Route path="/candidates/president/:name" element={<President />} />
+
+          <Route
+            path="/candidates/vice-president"
+            element={<VicePresidents />}
+          />
+          <Route
+            path="/candidates/school-representatives"
+            element={<SchoolReps />}
+          />
+
+          <Route path="/a-year-in-review" element={<YearInReview />} />
 
           <Route path="*" element={<NoMatch />} />
         </Route>
+        <Route path="/archives" element={<Archives />} />
       </Routes>
     </>
   );
 }
 
-//TODO: PUT NAV BAR AND FOOTER HERE
 function Layout() {
   return (
-    <>
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
-      <Header />
-      {/* An <Outlet> renders whatever child route is currently active,
+    <div className="flex flex-col min-h-screen justify-between">
+      <div>
+        <Header />
+        {/* An <Outlet> renders whatever child route is currently active,
           so you can think about this <Outlet> as a placeholder for
           the child routes we defined above. */}
-      <Outlet />
+        <Outlet />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

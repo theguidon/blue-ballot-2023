@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .square {
+    aspect-ratio: 1/1;
+  }
+}
 /* FANCY UNDERLINE HOVER EFFECT CSS BELOW */
 
 .link-underline {
@@ -28,29 +33,15 @@
   background-repeat: no-repeat;
 }
 
-.link-underline-candidates {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(rgb(156 163 175), rgb(156 163 175));
-  background-size: 0px 3px;
-  background-position: 17px 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.25s ease-in-out;
+/* No need for this since it's in the tailwind config */
+.franklin-gothic-book {
+  font-family: "Franklin Gothic Book", sans-serif;
 }
 
-.link-underline-candidates:hover {
-  background-size: 100% 3px;
-  background-position: 17px 100%;
+.franklin-gothic-demi {
+  font-family: "Franklin Gothic Demi", sans-serif;
 }
 
-.franklin-gothic-book{
-  font-family: 'Franklin Gothic Book', sans-serif;
-}
-
-.franklin-gothic-demi{
-  font-family: 'Franklin Gothic Demi', sans-serif;
-}
-
-.chivo-regular{
-  font-family: 'Chivo Regular', sans-serif;
+.chivo-regular {
+  font-family: "Chivo Regular", sans-serif;
 }
